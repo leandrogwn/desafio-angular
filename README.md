@@ -1,4 +1,4 @@
-# desafio-angular
+# Desafio-Angular
 
 Cenário
 Construa uma aplicação Web que irá utilizar as listagens de uma API Rest.

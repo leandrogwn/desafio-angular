@@ -2,7 +2,7 @@
 
 body{
     background-image: linear-gradient(85deg, #8e64b1, #7523f8);
-    margin: 32px 10% 32px 10%;
+    margin: 32px 10% 0 10%;
 }
 
 @font-face {
@@ -50,4 +50,42 @@ a:hover{
     font-size: 20px;
     font-weight: 700;
     color: #fff;
+}
+
+h1{
+    font-family: 'Dosis';
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+p{
+    font-family: 'Dosis';
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.btn-primary{
+    background-color: #fff;
+    color: #7523f8;
+    border-radius: 20px;
+    padding: 8px;
+    font-family: 'Dosis';
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.btn-primary:hover{
+    background-color: #fff;
+    color: #7523f8;
+    border-radius: 20px;
+    padding: 8px;
+    font-family: 'Dosis';
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid yellow;
 }

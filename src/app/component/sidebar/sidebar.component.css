@@ -1,0 +1,26 @@
+.container{
+    width: 100%; 
+    display: inline-flex;
+    text-wrap: nowrap;
+    align-items: center;
+}
+
+.menu{
+    width: 100%; 
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.menu div{
+    padding: 16px;
+}
+
+.container div{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.container img{
+    width: 64px;
+}

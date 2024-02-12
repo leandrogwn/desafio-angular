@@ -10,25 +10,24 @@ body{
     margin: 32px 10% 0 10%;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
 }
 
 @font-face {
-    font-family: 'Dosis';
+    font-family: 'Dosis-bold';
     src: url('assets/fonts/dosis/Dosis-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Dosis';
+    font-family: 'Dosis-medium';
     src: url('assets/fonts/dosis/Dosis-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Dosis';
+    font-family: 'Dosis-regular';
     src: url('assets/fonts/dosis/Dosis-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
@@ -37,9 +36,9 @@ body{
 a{
     color: #fff;
     padding: 8px;
-    font-family: 'Dosis';
+    font-family: 'Dosis-bold';
     font-size: 14px;
-    font-weight: 700;
+    text-decoration: none;
 }
 
 a:hover{
@@ -47,30 +46,26 @@ a:hover{
     color: #7523f8;
     border-radius: 20px;
     padding: 8px;
-    font-family: 'Dosis';
+    font-family: 'Dosis-bold';
     font-size: 14px;
-    font-weight: 700;
     cursor: pointer;
 }
 
 .title{
-    font-family: 'Dosis';
+    font-family: 'Dosis-bold';
     font-size: 20px;
-    font-weight: 700;
     color: #fff;
 }
 
 h1{
-    font-family: 'Dosis';
+    font-family: 'Dosis-bold';
     font-size: 32px;
-    font-weight: 700;
     color: #fff;
 }
 
 p{
-    font-family: 'Dosis';
+    font-family: 'Dosis-regular';
     font-size: 14px;
-    font-weight: 400;
     color: #fff;
 }
 
@@ -79,9 +74,8 @@ p{
     color: #7523f8;
     border-radius: 20px;
     padding: 8px;
-    font-family: 'Dosis';
+    font-family: 'Dosis-bold';
     font-size: 14px;
-    font-weight: 700;
     cursor: pointer;
     border: 2px solid #fff;
 }
@@ -91,9 +85,22 @@ p{
     color: #7523f8;
     border-radius: 20px;
     padding: 8px;
-    font-family: 'Dosis';
+    font-family: 'Dosis-bold';
     font-size: 14px;
-    font-weight: 700;
     cursor: pointer;
     border: 2px solid yellow;
+}
+
+input{
+    height: 32px;
+}
+
+label{
+    color: #fff;
+    font-family: 'Dosis-regular';
+}
+
+.help-text-error{
+    font-family: 'Dosis-regular';
+    color: yellow;
 }

@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.iten-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.iten-form .chamada{
+    font-family: 'Dosis-bold';
+    font-size: 32px;
+    color: rgb(255, 231, 12);
+}
+.iten-form .text{
+    font-family: 'Dosis-bold';
+    font-size: 32px;
+    color: #fff;
+}
+
+.iten-form p{
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Dosis-bold';
+}
+
+.picture{
+    margin-right: 32px;
+}
+
+.picture img{
+    max-width: calc(100vh - 184px);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    gap: 4px;
+    margin-top: 16px;
+}
+
+button{
+    display: flex;
+    width: fit-content;
+    margin-top: 16px;
+}

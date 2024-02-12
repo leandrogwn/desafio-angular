@@ -1,25 +1,22 @@
 .container{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .text{
-    width: 50%;
     display: flex;
-    margin: 32px;
     flex-direction: column;
+    width: 50%;
+    margin: 32px;
     justify-content: center;
     align-items: flex-start;
-    gap: 32px;
 }
 
 .images{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-end;
+    margin-right: 32px;
 }
 
-.images img{
-    height: 90%;
+.images img{    
+    max-width: calc(100vh - 184px);
 }

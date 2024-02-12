@@ -5,18 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './component/sidebar/sidebar.component';
 import { InicialComponent } from './component/pagina/inicial/inicial.component';
-import { FooterComponent } from './component/footer/footer.component';
+import { FooterComponent } from './component/pagina/footer/footer.component';
+import { AssinarComponent } from './component/pagina/assinar/assinar.component';
+import { PostComponent } from './component/pagina/post/post.component';
+import { SobreComponent } from './component/pagina/sobre/sobre.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     InicialComponent,
-    FooterComponent
+    FooterComponent,
+    AssinarComponent,
+    PostComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

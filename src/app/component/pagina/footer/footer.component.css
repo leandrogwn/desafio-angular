@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    height: 48px;
+    align-items: end;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Dosis-medium';
+}

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="iten-form">
+    <div class="chamada">Inscreva-se agora</div>
+    <div class="text">para receber nossas novidades.</div>
+    <form #formNewletter="ngForm" (ngSubmit)="enviarForm(formNewletter)">
+      <label for="nome">Seu nome</label>
+      <input type="text" id="nome" name="nome" [(ngModel)]="nome" required minlength="3">
+      <div  class="help-text-error" *ngIf="formNewletter.controls['nome']?.invalid && (formNewletter.controls['nome'].touched || formNewletter.submitted)">
+        Campo obrigatório
+      </div>
+      <label for="email">insira seu e-mail</label>
+      <input type="email" name="email" id="email" [(ngModel)]="email" required email>
+      <div class="help-text-error" *ngIf="formNewletter.controls['email']?.invalid && (formNewletter.controls['email'].touched || formNewletter.submitted)">
+        Campo obrigatório
+      </div>
+      <button class="btn-primary" type="submit">Enviar meus dados</button>
+    </form>
+  </div>
+  <div class="picture">
+    <img src="assets/images/newletter.png" alt="Ilustração de pessoa lendo email.">
+  </div>
+</div>

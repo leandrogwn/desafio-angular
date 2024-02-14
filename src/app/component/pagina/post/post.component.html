@@ -1,3 +1,11 @@
-<p>
-  post works!
-</p>
+  <table>
+  <tr>
+    <th *ngFor="let column of displayedColumns">{{ column }}</th>
+  </tr>
+  <tr *ngFor="let itens of dataSource | slice:0:10;">
+    <td>{{ itens.userId }}</td>
+    <td>{{ itens.id }}</td>
+    <td>{{ itens.title }}</td>
+    <td>{{ itens.body }}</td>
+  </tr>
+</table>

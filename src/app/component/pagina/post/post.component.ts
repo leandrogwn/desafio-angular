@@ -25,8 +25,6 @@ export class PostComponent {
   ngOnInit() {
     this.http.get('https://jsonplaceholder.typicode.com/posts').subscribe((resposta) =>{
       this.dataSource = resposta;
-      console.log(this.dataSource);
-      console.log(this.displayedColumns);
     })
   }
 

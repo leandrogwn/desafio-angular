@@ -1,0 +1,23 @@
+table {
+    border-collapse: collapse;
+    background-color: #fff;
+    font-family: 'Dosis-regular';
+  }
+
+  th {
+    background-color: #ccc;
+    color: white;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  .groupBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }

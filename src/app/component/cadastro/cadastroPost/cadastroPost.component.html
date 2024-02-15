@@ -1,0 +1,35 @@
+<h3 class="title">
+  Cadastro de post
+</h3>
+
+<div class="container">
+  <form #formPost="ngForm" (ngSubmit)="enviarPost(formPost)">
+    <label for="userId">User id</label>
+    <input type="text" id="userId" name="userId" [(ngModel)]="userId" required>
+    <div class="help-text-error" *ngIf="formPost.controls['userId']?.invalid && (formPost.controls['userId'].touched || formPost.submitted)">
+      Campo obrigatório
+    </div>
+
+    <label for="id">Id</label>
+    <input type="text" name="id" id="id" [(ngModel)]="id" required>
+    <div class="help-text-error" *ngIf="formPost.controls['id']?.invalid && (formPost.controls['id'].touched || formPost.submitted)">
+      Campo obrigatório
+    </div>
+    
+    <label for="title">Título</label>
+    <input type="text" name="title" id="title" [(ngModel)]="title" required minlength="3">
+    <div class="help-text-error" *ngIf="formPost.controls['title']?.invalid && (formPost.controls['title'].touched || formPost.submitted)">
+      Campo inválido
+    </div>
+    
+    <label for="post">Postagem</label>
+    <input type="text" name="post" id="post" [(ngModel)]="body" required minlength="10">
+    <div class="help-text-error" *ngIf="formPost.controls['post']?.invalid && (formPost.controls['post'].touched || formPost.submitted)">
+      Campo inválido
+    </div>
+
+    <div class="btn">
+      <button class="btn-primary" type="submit">Enviar post</button>
+    </div>
+  </form>
+</div>

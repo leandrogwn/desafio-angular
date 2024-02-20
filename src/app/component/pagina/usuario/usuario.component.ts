@@ -14,8 +14,6 @@ export class UsuarioComponent implements OnInit {
 
   displayedColumns = ['id','name','username','email','city'];
 
-
-  
   ngOnInit() {
     this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((resposta)=>{
       this.dataSource = resposta;

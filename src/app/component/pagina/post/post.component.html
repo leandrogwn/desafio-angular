@@ -4,11 +4,16 @@
   </h3>
   <a class="btn-primary" routerLink="../cadastroPost">Novo post</a>
 </div>
-  <table>
+<div class="groupBtnAcao">
+  <input type="button" routerLink="" text="Editar post" value="Editar post" [disabled]="!displayButton">
+</div>
+<table>
   <tr>
+    <th><input type="checkbox"></th>
     <th *ngFor="let column of displayedColumns">{{ column }}</th>
   </tr>
   <tr *ngFor="let itens of dataSource | slice:0:10;">
+    <td><input type="checkbox" id="itens.id" (change)="enableEdit()"></td>
     <td>{{ itens.userId }}</td>
     <td>{{ itens.id }}</td>
     <td>{{ itens.title }}</td>

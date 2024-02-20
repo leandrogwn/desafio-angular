@@ -21,3 +21,7 @@ table {
     align-items: center;
     justify-content: space-between;
   }
+
+  button{
+    margin-bottom: 16px;
+  }

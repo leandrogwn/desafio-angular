@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cadastroPost',
@@ -12,7 +13,8 @@ export class CadastroPostComponent {
 
   result: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,
+    public router: Router) { }
 
   enviarPost(form: NgForm) {
 
@@ -32,9 +34,14 @@ export class CadastroPostComponent {
         this.result = resposta;
         alert('Criado');
         console.log(this.result);
+        this.listaPost();
       })
     } else {
       alert('Não foi possível realizar a postagem');
     }
+  }
+  
+  listaPost(){
+    this.router.navigate(['post']);
   }
 }

@@ -14,6 +14,7 @@ export class PostComponent {
   displayButton: boolean;
   countCheckbox: number;
   selectAll = false;
+  public codes: [];
   
   displayedColumns = [
     'UserId',
@@ -36,6 +37,7 @@ export class PostComponent {
     
     this.dataSource.forEach(item => {
       if (item.checked) {
+        this.codes = item.id;
         this.countCheckbox ++;
       };
     });

@@ -1,0 +1,36 @@
+
+<h3 class="title">
+  Edição da postagem  {{ codeClient }}
+</h3>
+
+<div class="container">
+  <form #formPost="ngForm" (ngSubmit)="editPost(formPost)">
+    <label for="userId">User id</label>
+    <input type="text" id="userId" name="userId" [(ngModel)]="userId" required [value]="dataSource['userId']">
+    <div class="help-text-error" *ngIf="formPost.controls['userId']?.invalid && (formPost.controls['userId'].touched )">
+      Campo obrigatório
+    </div>
+
+    <label for="id">Id</label>
+    <input type="text" name="id" id="id" [(ngModel)]="id" disabled required [value]="dataSource['id']">
+    <div class="help-text-error" *ngIf="formPost.controls['id']?.invalid && (formPost.controls['id'].touched)">
+      Campo obrigatório
+    </div>
+    
+    <label for="title">Título</label>
+    <input type="text" name="title" id="title" [(ngModel)]="title" required minlength="3" [value]="dataSource['title']">
+    <div class="help-text-error" *ngIf="formPost.controls['title']?.invalid && (formPost.controls['title'].touched)">
+      Campo inválido
+    </div>
+    
+    <label for="post">Postagem</label>
+    <input type="text" name="post" id="post" [(ngModel)]="body" required minlength="10" [value]="dataSource['body']">
+    <div class="help-text-error" *ngIf="formPost.controls['post']?.invalid && (formPost.controls['post'].touched)">
+      Campo inválido
+    </div>
+
+    <div class="btn">
+      <button class="btn-primary" type="submit">Atualizar post</button>
+    </div>
+  </form>
+</div>

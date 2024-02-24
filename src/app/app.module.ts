@@ -16,7 +16,8 @@ import { CadastroPostComponent } from './component/cadastro/cadastroPost/cadastr
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import {MatTableModule} from '@angular/material/table';
+import {MatTableModule} from '@angular/material/table'; 
+import { EditPostComponent } from './component/edit/edit-post/edit-post.component';
 
 
 
@@ -30,7 +31,8 @@ import {MatTableModule} from '@angular/material/table';
     PostComponent,
     SobreComponent,
     UsuarioComponent,
-    CadastroPostComponent
+    CadastroPostComponent,
+    EditPostComponent
   ],
   imports: [
     BrowserModule,

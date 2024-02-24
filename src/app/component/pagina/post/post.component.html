@@ -9,11 +9,11 @@
 </div>
 <table>
   <tr>
-    <th><input type="checkbox"></th>
+    <th><input type="checkbox" [(ngModel)]="selectAll" (ngModelChange)="toogleSelectAll()"></th>
     <th *ngFor="let column of displayedColumns">{{ column }}</th>
   </tr>
   <tr *ngFor="let itens of dataSource | slice:0:10;">
-    <td><input type="checkbox" id="itens.id" (change)="enableEdit()"></td>
+    <td><input name="checkbox" type="checkbox" id="itens.id" [(ngModel)]="itens.checked" (ngModelChange)="enableEdit()"></td>
     <td>{{ itens.userId }}</td>
     <td>{{ itens.id }}</td>
     <td>{{ itens.title }}</td>
